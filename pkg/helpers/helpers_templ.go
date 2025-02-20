@@ -8,7 +8,7 @@ package helpers
 import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
-import "github.com/axzilla/templui/pkg/components"
+import "github.com/gijan/templui/pkg/components"
 
 // ComponentScripts returns script tags for all components.
 func ComponentScripts() templ.Component {

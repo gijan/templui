@@ -10,7 +10,7 @@ import templruntime "github.com/a-h/templ/runtime"
 
 import (
 	"fmt"
-	"github.com/axzilla/templui/pkg/utils"
+	"github.com/gijan/templui/pkg/utils"
 	"strings"
 )
 

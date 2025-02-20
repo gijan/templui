@@ -4,7 +4,7 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/axzilla/templui/internal/ctxkeys"
+	"github.com/gijan/templui/internal/ctxkeys"
 )
 
 func CacheControlMiddleware(next http.Handler) http.Handler {

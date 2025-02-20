@@ -9,8 +9,8 @@ import "github.com/a-h/templ"
 import templruntime "github.com/a-h/templ/runtime"
 
 import (
-	"github.com/axzilla/templui/pkg/icons"
-	"github.com/axzilla/templui/pkg/utils"
+	"github.com/gijan/templui/pkg/icons"
+	"github.com/gijan/templui/pkg/utils"
 )
 
 type AccordionItem struct {
