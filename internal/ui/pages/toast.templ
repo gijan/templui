@@ -2,14 +2,17 @@ package pages
 
 import (
 	"fmt"
-	"github.com/gijan/templui/internal/ui/layouts"
-	"github.com/gijan/templui/internal/ui/modules"
-	"github.com/gijan/templui/internal/ui/showcase"
-	"github.com/gijan/templui/pkg/components"
+	"github.com/axzilla/templui/components"
+	"github.com/axzilla/templui/internal/ui/layouts"
+	"github.com/axzilla/templui/internal/ui/modules"
+	"github.com/axzilla/templui/internal/ui/showcase"
 )
 
 templ Toast() {
-	@layouts.DocsLayout() {
+	@layouts.DocsLayout(
+		"Toast",
+		"Flexible toast component for notifications and feedback.",
+	) {
 		@modules.PageWrapper(modules.PageWrapperProps{
 			Name:        "Toast",
 			Description: templ.Raw("Flexible toast component for notifications and feedback."),

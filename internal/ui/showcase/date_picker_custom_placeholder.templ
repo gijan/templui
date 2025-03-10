@@ -1,0 +1,11 @@
+package showcase
+
+import "github.com/axzilla/templui/components"
+
+templ DatePickerCustomPlaceholder() {
+	<div class="w-full max-w-sm">
+		@components.DatePicker(components.DatePickerProps{
+			Placeholder: "When is your birthday?",
+		})
+	</div>
+}

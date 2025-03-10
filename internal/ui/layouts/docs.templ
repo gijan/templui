@@ -2,26 +2,31 @@ package layouts
 
 import "github.com/gijan/templui/internal/ui/modules"
 
-templ DocsLayout() {
-	@BaseLayout() {
+templ DocsLayout(title, description string) {
+	@BaseLayout(title, description) {
 		<div class="flex flex-col h-screen">
-			<div class="shrink-0">
-				@modules.Navbar()
-			</div>
-			<div class="flex flex-1 overflow-hidden">
-				<div class="hidden lg:block border-r overflow-y-auto h-full">
-					@modules.Sidebar()
-				</div>
-				<main class="flex-1 overflow-y-auto h-full">
-					<div class="container max-w-3xl mx-auto px-4 py-8">
-						{ children... }
+			@modules.AnnouncementBar()
+			@modules.Navbar()
+			<div class="container mx-auto px-4 flex flex-1 overflow-hidden">
+				<div class="hidden lg:block w-64 overflow-y-auto">
+					<div class="pt-8 pb-8 pr-4">
+						@modules.Sidebar()
 					</div>
+				</div>
+				<main class="flex-1 overflow-y-auto">
+					<div class="pt-8 pb-8 px-4">
+						<div class="max-w-3xl mx-auto">
+							{ children... }
+						</div>
+					</div>
+					@modules.Footer()
 				</main>
-				<div class="hidden lg:block border-l overflow-y-auto h-full">
-					@modules.SidebarRight()
+				<div class="hidden lg:block w-64 overflow-y-auto">
+					<div class="pt-8 pb-8 pl-4">
+						@modules.SidebarRight()
+					</div>
 				</div>
 			</div>
 		</div>
-		@modules.Footer()
 	}
 }

@@ -1,6 +1,6 @@
 package modules
 
-import "github.com/gijan/templui/pkg/icons"
+import "github.com/axzilla/templui/icons"
 
 type SidebarRightLItem struct {
 	ImageSrc string
@@ -27,7 +27,7 @@ var SidebarRightLinks = []SidebarRightLItem{
 }
 
 templ SidebarRight() {
-	<aside class="border-l border-border flex flex-col w-64 h-full p-6">
+	<aside class="flex flex-col h-full">
 		<h3 class="text-sm font-bold text-muted-foreground">Our Friends</h3>
 		for i, link := range SidebarRightLinks {
 			<a href={ templ.SafeURL(link.Url) } target="_blank" class="relative opacity-80 hover:opacity-100 py-6 flex flex-col items-start justify-between overflow-hidden group">
@@ -58,4 +58,3 @@ templ SidebarRight() {
 		</div>
 	</aside>
 }
-

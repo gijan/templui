@@ -2,14 +2,17 @@ package pages
 
 import (
 	"fmt"
-	"github.com/gijan/templui/internal/ui/layouts"
-	"github.com/gijan/templui/internal/ui/modules"
-	"github.com/gijan/templui/internal/ui/showcase"
-	"github.com/gijan/templui/pkg/components"
+	"github.com/axzilla/templui/components"
+	"github.com/axzilla/templui/internal/ui/layouts"
+	"github.com/axzilla/templui/internal/ui/modules"
+	"github.com/axzilla/templui/internal/ui/showcase"
 )
 
 templ Icon() {
-	@layouts.DocsLayout() {
+	@layouts.DocsLayout(
+		"Icon",
+		"A wrapper for Lucide Icons with optional settings for size, color, fill, stroke, and custom classes.",
+	) {
 		@modules.PageWrapper(modules.PageWrapperProps{
 			Name:        "Icon",
 			Description: templ.Raw(`A wrapper for <a href="https://lucide.dev" target="_blank" rel="noopener noreferrer" class="text-primary underline underline-offset-2 hover:opacity-80 transition-opacity">Lucide Icons</a> with optional settings for size, color, fill, stroke, and custom classes. Browse available icons in the Lucide library to see what you can use.`),

@@ -7,7 +7,10 @@ import (
 )
 
 templ Button() {
-	@layouts.DocsLayout() {
+	@layouts.DocsLayout(
+		"Button",
+		"Interactive element that triggers actions when clicked.",
+	) {
 		@modules.PageWrapper(modules.PageWrapperProps{
 			Name:        "Button",
 			Description: templ.Raw("Interactive element that triggers actions when clicked."),
@@ -39,6 +42,12 @@ templ Button() {
 					SectionName:       "Icons",
 					ShowcaseFile:      showcase.ButtonIcons(),
 					PreviewCodeFile:   "button_icons.templ",
+					ComponentCodeFile: "button.templ",
+				})
+				@modules.ExampleWrapper(modules.ExampleWrapperProps{
+					SectionName:       "HTMX Loading (5s)",
+					ShowcaseFile:      showcase.ButtonHtmxLoading(),
+					PreviewCodeFile:   "button_htmx_loading.templ",
 					ComponentCodeFile: "button.templ",
 				})
 			}

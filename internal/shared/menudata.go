@@ -42,12 +42,20 @@ var Sections = []Section{
 				Href: "/docs/components/alert",
 			},
 			{
+				Text: "Aspect Ratio",
+				Href: "/docs/components/aspect-ratio",
+			},
+			{
 				Text: "Avatar",
 				Href: "/docs/components/avatar",
 			},
 			{
 				Text: "Badge",
 				Href: "/docs/components/badge",
+			},
+			{
+				Text: "Breadcrumb",
+				Href: "/docs/components/breadcrumb",
 			},
 			{
 				Text: "Button",
@@ -58,6 +66,14 @@ var Sections = []Section{
 				Href: "/docs/components/card",
 			},
 			{
+				Text: "Carousel",
+				Href: "/docs/components/carousel",
+			},
+			{
+				Text: "Charts",
+				Href: "/docs/components/charts",
+			},
+			{
 				Text: "Code",
 				Href: "/docs/components/code",
 			},
@@ -66,8 +82,12 @@ var Sections = []Section{
 				Href: "/docs/components/checkbox",
 			},
 			{
-				Text: "Datepicker",
-				Href: "/docs/components/datepicker",
+				Text: "Checkbox Card",
+				Href: "/docs/components/checkbox-card",
+			},
+			{
+				Text: "Date Picker",
+				Href: "/docs/components/date-picker",
 			},
 			{
 				Text: "Dropdown Menu",
@@ -86,6 +106,10 @@ var Sections = []Section{
 				Href: "/docs/components/input",
 			},
 			{
+				Text: "Input OTP",
+				Href: "/docs/components/input-otp",
+			},
+			{
 				Text: "Label",
 				Href: "/docs/components/label",
 			},
@@ -94,20 +118,49 @@ var Sections = []Section{
 				Href: "/docs/components/modal",
 			},
 			{
+				Text: "Pagination",
+				Href: "/docs/components/pagination",
+			},
+			{
+				Text: "Progress",
+				Href: "/docs/components/progress",
+			},
+			{
 				Text: "Radio",
 				Href: "/docs/components/radio",
+			},
+			{
+				Text: "RadioCard",
+				Href: "/docs/components/radio-card",
+			},
+			{
+				Text: "Rating",
+				Href: "/docs/components/rating",
 			},
 			{
 				Text: "Select",
 				Href: "/docs/components/select",
 			},
 			{
+				Text: "Separator",
+				Href: "/docs/components/separator",
+			},
+
+			{
 				Text: "Sheet",
 				Href: "/docs/components/sheet",
 			},
 			{
+				Text: "Skeleton",
+				Href: "/docs/components/skeleton",
+			},
+			{
 				Text: "Slider",
 				Href: "/docs/components/slider",
+			},
+			{
+				Text: "Spinner",
+				Href: "/docs/components/spinner",
 			},
 			{
 				Text: "Tabs",
@@ -118,8 +171,8 @@ var Sections = []Section{
 				Href: "/docs/components/textarea",
 			},
 			{
-				Text: "Timepicker",
-				Href: "/docs/components/timepicker",
+				Text: "Time Picker",
+				Href: "/docs/components/time-picker",
 			},
 			{
 				Text: "Toast",
